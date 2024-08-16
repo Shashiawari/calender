@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+Here’s a README template for your calendar application:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# CalendarApp
 
-In the project directory, you can run:
+A simple and interactive calendar application built with React.js that allows users to add, edit, and delete events on specific dates. The application highlights dates with events and provides smooth navigation through months to view events.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Monthly View**: Displays the days of the current month, including the weekdays and dates.
+- **Navigation**: Users can navigate between months using the provided next and previous buttons.
+- **Add Events**: Click on any future date to add an event with a specific time and description (up to 60 characters).
+- **Edit Events**: Edit any existing event by clicking on the edit icon next to the event.
+- **Delete Events**: Delete an event by clicking on the delete icon next to the event.
+- **Highlighted Dates**: Dates with events are highlighted to quickly identify important days.
+- **Real-time Updates**: Events are sorted and displayed in real-time, ensuring an up-to-date view.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/your-username/CalendarApp.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd CalendarApp
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install the dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   The application will open in your default browser at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Click on any date in the current month to add an event.
+- Fill in the event details, including time and a brief description (max 60 characters).
+- Click the "Add Event" button to save the event.
+- To edit an event, click on the edit icon next to the event in the list.
+- To delete an event, click on the delete icon next to the event in the list.
+- Use the navigation arrows to move between months.
 
-## Learn More
+## Code Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **`CalendarApp.jsx`**: The main component that handles rendering the calendar, managing state, and handling user interactions.
+- **`daysOfWeek` and `monthsOfYear`**: Arrays storing the names of the days and months for display.
+- **`currentDate`**: Tracks the current date to highlight today’s date.
+- **State Management**:
+  - `currentMonth`, `currentYear`: Manage the currently viewed month and year.
+  - `selectedDate`: Tracks the date currently selected for adding or editing events.
+  - `showEventPopup`: Toggles the display of the event popup.
+  - `events`: Stores all the events created by the user.
+  - `eventTime`, `eventText`: Manage the time and text input for events.
+  - `editingEvent`: Tracks the event being edited, if any.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request with your changes. Ensure your code follows the existing style and includes appropriate tests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For any inquiries, feel free to reach out via GitHub Issues or email me at [shashiawaripreetham@gmail.com].
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
