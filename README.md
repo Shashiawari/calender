@@ -1,7 +1,3 @@
-Here’s a README template for your calendar application:
-
----
-
 # CalendarApp
 
 A simple and interactive calendar application built with React.js that allows users to add, edit, and delete events on specific dates. The application highlights dates with events and provides smooth navigation through months to view events.
