@@ -17,7 +17,7 @@ A simple and interactive calendar application built with React.js that allows us
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/CalendarApp.git
+   git clone https://github.com/shashiawari/CalendarApp.git
    ```
 
 2. Navigate to the project directory:
